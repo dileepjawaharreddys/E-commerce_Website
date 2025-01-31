@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1><a href="index.html">ShopEase</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="login.html">Account</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li>
+                    <input type="text" id="search" placeholder="Search...">
+                </li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products" class="product-section">
+        <h2>Products</h2>
+        <div class="product-list">
+            <!-- Static Product Items -->
+            <div class="product" id="product1">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3><a href="product-details.html?id=product1">Product 1</a></h3>
+                <p>$29.99</p>
+                <button onclick="addToCart('product1', 'Product 1', 29.99, 'images/product1.jpg')">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="images/shoes2.jpg" alt="Product 2">
+                <h3><a href="product-details.html?id=product2">Product 2</a></h3>
+                <p>$39.99</p>
+                <button onclick="addToCart('product2', 'Product 2', 39.99, 'images/product2.jpg')">Add to Cart</button>
+            </div>
+            <div class="product" id="product3">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3><a href="product-details.html?id=product3">Product 3</a></h3>
+                <p>$19.99</p>
+                <button onclick="addToCart('product3', 'Product 3', 19.99, 'images/product3.jpg')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
